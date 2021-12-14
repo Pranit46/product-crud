@@ -19,7 +19,7 @@ function Food() {
 
   useEffect(() => {
     getData();
-  },[]);
+  });
   return (
     <div className="main-wrapper">
       {/* <h2>Men's Club</h2> */}
