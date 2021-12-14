@@ -1,6 +1,5 @@
-import React, { useContext, useState, useStte } from "react";
+import React, { useContext, useState } from "react";
 import { itemsContext } from "../App";
-import { useNavigate } from "react-router-dom";
 
 function Cloths() {
   let context = useContext(itemsContext);
@@ -23,7 +22,7 @@ function Cloths() {
                   <div className="cart-card" key="{i}">
                     <div className="image-info">
                       <div className="iamge-box-cart">
-                        <img
+                        <img alt={e.name}
                           className="card-img-top"
                           src={e.image}
                         />
@@ -53,7 +52,7 @@ function Cloths() {
         <>
           <div className="empty-cart">
             <h3>Your cart is empty</h3>
-            <img src="https://thumbs.dreamstime.com/b/happy-asian-businessman-empty-shopping-cart-cartoon-illustration-151640371.jpg"></img>
+            <img alt="empty-cart-image" src="https://thumbs.dreamstime.com/b/happy-asian-businessman-empty-shopping-cart-cartoon-illustration-151640371.jpg"></img>
           </div>
         </>
       )}
