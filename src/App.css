@@ -1,38 +1,181 @@
-.App {
+.navbar {
+  background-color: #f6f6f68f;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 3px solid red; */
+  padding: 50 px;
+  height: 80px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+
+
+.cart-value {
+  width: 8%;
+  height: 50px;
+  float: right;
+  padding: 20 px;
+  /* border: 2px solid red; */
+  background-color: #ffc107;
+  margin-right: 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+.cart-number {
+  font-weight: bold;
+  padding-top: 1px;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.main-container > div {
+  /* border: 1px solid red; */
+  height: 100%;
+  position: center;
+}
+
+.card-img-top {
+  height: 150px;
+  width: 150px;
+}
+
+.product-wrapper {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-around;
+}
+
+.iamge-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 10px 25px;
+}
+
+.card {
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+  box-shadow: -1px 9px 5px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: -1px 9px 5px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: -1px 9px 5px 0px rgba(0, 0, 0, 0.14);
+  border-radius: 13px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card-button {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav1 a {
+  text-decoration: none;
+  background-color: white !important;
+  color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.item-name {
+  height: 45px;
+  margin: 2px;
+  border-bottom: 2px solid #f6f6f68f;
+  padding-top: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item-name:hover {
+  border-bottom-color: orange;
+  transition: border 0.6s ease-in-out;
+  background-color: white;
+}
+.sidebar {
+  background-color: #f6f6f68f;
+}
+
+.card-img-top-food {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.shopping-cart-text {
+  width: 25%;
+  padding: 10px;
+}
+
+.empty-cart > img {
+  height: 500px;
+}
+
+.empty-cart {
+  text-align: center;
+}
+
+.image-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-card {
+  width: 35%;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  width: 800px;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  font-weight: bold;
+  padding-right: 22px;
+  padding-bottom: 10px;
+}
+
+.product-cart-wrapper {
+  margin-left: 15px;
+}
+
+.item-name{
+  margin-top: 10px;
 }
