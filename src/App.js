@@ -1,16 +1,14 @@
 import "./App.css";
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { FaCartArrowDown } from "react-icons/fa";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  NavLink,
 } from "react-router-dom";
 import SideBar from "./Components/Sidebar";
 import Cloths from "./Components/Cloths";
 import Food from "./Components/Food";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Cart from "./Components/Cart";
 export const itemsContext = React.createContext();
