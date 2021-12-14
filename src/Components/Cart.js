@@ -52,7 +52,7 @@ function Cloths() {
         <>
           <div className="empty-cart">
             <h3>Your cart is empty</h3>
-            <img alt="empty-cart-image" src="https://thumbs.dreamstime.com/b/happy-asian-businessman-empty-shopping-cart-cartoon-illustration-151640371.jpg"></img>
+            <img alt="empty-cart" src="https://thumbs.dreamstime.com/b/happy-asian-businessman-empty-shopping-cart-cartoon-illustration-151640371.jpg"></img>
           </div>
         </>
       )}
